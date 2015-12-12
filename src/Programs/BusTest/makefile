@@ -90,6 +90,6 @@ Unix/BusTest.o: BusTest.c Unix ../../Include/QstCmd.h ../../Include/QstCfg.h \
 	$(CC) $(CFLAGS) -o $@ $<
 
 Unix/BusTest: Unix/BusTest.o
-	$(CC) $(LDFLAGS) -lQstComm -o $@ $^
+	$(CC) $(LDFLAGS) -o $@ $^ -lQstComm
 
 
