@@ -88,6 +88,6 @@ Unix/InstTest.o: InstTest.c Unix ../../Include/QstInst.h ../../Include/typedef.h
 	$(CC) $(CFLAGS) -o $@ $<
 
 Unix/InstTest: Unix/InstTest.o
-	$(CC) $(LDFLAGS) -lQstInst -lQstComm -o $@ $^
+	$(CC) $(LDFLAGS) -o $@ $^ -lQstInst -lQstComm
 
 
