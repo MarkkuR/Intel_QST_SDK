@@ -100,6 +100,6 @@ Unix/StatTest.o: StatTest.c Unix ../../Common/AccessQst.h \
 	$(CC) $(CFLAGS) -o $@ $<
 
 Unix/StatTest: Unix/StatTest.o Unix/AccessQst.o Unix/UsageStr.o
-	$(CC) $(LDFLAGS) -lQstComm -o $@ $^
+	$(CC) $(LDFLAGS) -o $@ $^ -lQstComm
 
 
